@@ -6,6 +6,8 @@ import "../../static/assets/css/plugins.css";
 import "../../static/assets/css/dark.css";
 
 function Footer () {
+  const current = new Date();
+  const year = `${current.getFullYear()}`;
   return (
     <div className="dizme_tm_section">
       <div className="dizme_tm_copyright">
@@ -13,12 +15,12 @@ function Footer () {
           <div className="inner">
             <div className="left wow fadeInLeft" data-wow-duration="1s">
               
-              <p>
+              <p className="kenkszii">
                 Developed by&nbsp;
-                <a href="https://wa.me/08181659815" target="_blank" rel="noreferrer" >
+                <a href="https://github.com/kenkszii" target="_blank" rel="noreferrer" className="kenkszii">
                 @kenkszii
                 </a> 
-                &copy; 2023
+                &copy; {year}
               </p>
 
             </div>
@@ -27,13 +29,13 @@ function Footer () {
               <ul>
 
                 <li>
-                  <a href="#!">
+                  <a href="#!" className="kenkszii">
                     Terms &amp; Condition
                   </a>
                 </li>
 
                 <li>
-                  <a href="#!">
+                  <a href="#!" className="kenkszii">
                     Privacy Policy
                   </a>
                 </li>

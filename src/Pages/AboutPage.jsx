@@ -1,5 +1,8 @@
 import React from "react";
+
 import about from "../static/assets/img/bg-image.jpg"
+import about1 from "../static/assets/img/brushes/about/1.png"
+import about2 from "../static/assets/img/brushes/about/2.png"
 
 
 function AboutPage () {
@@ -20,8 +23,8 @@ function AboutPage () {
                     <div className ="numbers project">
                       <div className ="wrapper">
                         <h3 className ="yellowText"><span className ="dizme_tm_counter" data-from="0" data-to="9"
-                          data-speed="2000">9</span>K</h3>
-                        <span className ="name">Total<br />Projects</span>
+                          data-speed="2000">We</span></h3>
+                        <span className ="name">Always<br />Deliever.</span>
                       </div>
                     </div>
                   </div>
@@ -48,8 +51,8 @@ function AboutPage () {
                 </div>
               </div>
             </div>
-            <div className ="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src="img/brushes/about/1.png" alt="" /></div>
-            <div className ="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="img/brushes/about/2.png" alt="" /></div>
+            <div className ="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src={about1} alt="" /></div>
+            <div className ="brush_2 wow fadeInRight" data-wow-duration="1s"><img src={about2} alt="" /></div>
           </div>
         </div>
   )

@@ -9,7 +9,8 @@ import anchor5 from "../static/assets/img/service/contact.svg"
 import anchor6 from "../static/assets/img/service/dark/3.png"
 import anchor7 from "../static/assets/img/service/itconsultation.svg"
 import anchor8 from "../static/assets/img/service/dark/4.png"
-
+import service1 from "../static/assets/img/brushes/service/5.png"
+import service2 from "../static/assets/img/brushes/service/6.png"
 
 function ServicePage() {
   return (
@@ -152,9 +153,9 @@ function ServicePage() {
             </ul>
           </div>
         </div>
-        <div class="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src="img/brushes/service/5.png"
+        <div class="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src={service1}
           alt="" /></div>
-        <div class="brush_2 wow zoomIn" data-wow-duration="1s"><img src="img/brushes/service/6.png" alt="" />
+        <div class="brush_2 wow zoomIn" data-wow-duration="1s"><img src={service2} alt="" />
         </div>
       </div>
     </div>

@@ -2,13 +2,12 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import Typewriter from 'typewriter-effect';
+import Lottie from "lottie-react";
 
 import "swiper/css";
 import "swiper/css/autoplay";
 
-import Lottie from "lottie-react";
 import groovyWalkAnimation from "../static/assets/img/TQyfp742Yu.json";
-import sheyi from "../static/assets/img/service/anchor.svg";
 
 
 function Home() {

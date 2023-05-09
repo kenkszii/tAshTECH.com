@@ -12,7 +12,7 @@ function Header () {
           <div className="inner">
               <div className="logo">
 
-                  <a href="#!">
+                  <a href="#home">
                     <img src={headerlog} alt="" />
                   </a>
 
@@ -50,7 +50,7 @@ function Header () {
                       </li>
 
                       <li className="download_cv">
-                        <a href="img/cv/1.jpg" download>
+                        <a href="#contact">
                           <span>Hire Us</span>
                         </a>
                       </li>

@@ -1,5 +1,8 @@
 import React from "react"
 
+// import contact1 from "../static/assets/img/brushes/contact/1.png"
+// import contact2 from "../static/assets/img/brushes/contact/2.png"
+
 function ContactPage() {
   return (
     <div className="dizme_tm_section" id="contact">
@@ -130,12 +133,12 @@ function ContactPage() {
             </div>
             
             <div className="brush_2 wow fadeInRight" data-wow-duration="1s">
-              <img src="img/brushes/contact/2.png"
-              alt="" />
+              {/* <img src={contact2}
+              alt="" /> */}
             </div>
           </div>
         <div className="brush_1 wow fadeInLeft" data-wow-duration="1s">
-          <img src="img/brushes/contact/1.png" alt="" />
+          {/* <img src={contact1} alt="" /> */}
         </div>
       </div>
     </div>

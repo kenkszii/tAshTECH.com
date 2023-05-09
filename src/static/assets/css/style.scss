@@ -259,7 +259,7 @@ h6 { font-size: 16px; }
 }
 
 .homebg {
-	background-image: url("../img/blur2aa.jpg");
+	// background-image: url("../img/blur2aa.jpg");
 	background-size: cover;
 	background-position: center;
 	height: 650px; /* set the height of the background image */
@@ -1778,7 +1778,8 @@ h6 { font-size: 16px; }
 	position: relative;
 	width: 60px;
 	height: 60px;
-	border-radius: 100%;
+	border-radius: 100%;	
+	margin-bottom: 5%;
 }
 .dizme_tm_testimonials .short .image .main{
 	position: absolute;
@@ -2069,8 +2070,9 @@ h6 { font-size: 16px; }
 }
 .dizme_tm_news ul li .image img{
 	position: relative;
-	opacity: 0;
+	// opacity: 0;
 	min-width: 100%;
+	min-height: 100%;
 }
 .dizme_tm_news ul li .image .main{
 	position: absolute;
@@ -2253,7 +2255,7 @@ h6 { font-size: 16px; }
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
-	background-color: rgba(128,103,240,.92);
+	background-color: rgba(174, 185, 205, 0.2901960784);
 	z-index: 1;
 	border-radius: 12px;
 }
@@ -3209,3 +3211,75 @@ input[type=number] {
 }
 
 
+.swiper-pagination {
+  margin-top: 20px !important;
+}
+/* Style the active pagination bullet */
+.swiper-pagination-bullet-active {
+	margin-top: 10% !important;
+  background-color: #f75023 !important;
+}
+.pag {
+	margin-top:20% !important;
+}
+
+.marg {
+	margin-bottom: 5%;
+}
+
+.modal {
+  font-size: 15px;
+	background-color: #2a4f6a;
+}
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+	overflow: scroll;
+	
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: 5px;
+  top: -5px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+	margin-top: 10px;
+}
+.disable-scroll {
+  overflow: hidden;
+}
+
+
+.popup-overlay {
+		overflow: scroll;
+}
+
+.kenkszii{
+	color:#2a4f6a !important;
+}
+
+.mapouter {
+	margin-top: -20%;
+	margin-bottom: 10%;
+	margin-left: 10px;
+	
+}
