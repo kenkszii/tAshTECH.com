@@ -11,7 +11,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import test1 from "../static/assets/img/testimonials/quote.svg"
-import test4 from "../static/assets/img/testimonials/3.jpg"
+import test4 from "../static/assets/img/testimonials/8.jpg"
 import test5 from "../static/assets/img/testimonials/4.jpg"
 import test7 from "../static/assets/img/testimonials/6.jpg"
 

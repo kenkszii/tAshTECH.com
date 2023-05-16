@@ -4,32 +4,32 @@ import React from "react";
 
 function NewsLetter () {
   return (
-    <div class="dizme_tm_section">
-            <div class="dizme_tm_subscribe">
-                <div class="container">
-                    <div class="inner">
-                        <div class="background">
-                            {/* <img class="dots" src={dot}/> */}
-                            <div class="overlay"></div>
+    <div className="dizme_tm_section">
+            <div className="dizme_tm_subscribe">
+                <div className="container">
+                    <div className="inner">
+                        <div className="background">
+                            {/* <img className="dots" src={dot}/> */}
+                            <div className="overlay"></div>
                         </div>
 
-                        <div class="content">
-                            <div class="left wow fadeInLeft" data-wow-duration="1s">
-                                <span class="subtitle">
+                        <div className="content">
+                            <div className="left wow fadeInLeft" data-wow-duration="1s">
+                                <span className="subtitle">
                                   Subscribe Now
                                 </span>
 
-                                <h3 class="title">
+                                <h3 className="title">
                                   Get Our Newsletter
                                 </h3>
 
-                                <p class="text">
+                                <p className="text">
                                   Get latest news, updates, tips and trics in your inbox
                                 </p>
                             </div>
 
-                            <div class="right wow fadeInRight" data-wow-duration="1s">
-                                <div class="field">
+                            <div className="right wow fadeInRight" data-wow-duration="1s">
+                                <div className="field">
                                     <input type="text" placeholder="Your email here"/>
                                     <input type="submit" value="Send Now" />
                                 </div>

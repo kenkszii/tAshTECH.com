@@ -17,8 +17,8 @@ function ContactPage() {
               I Want To Hear From You
             </h3>
             <p>
-              Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and
-              8:00 p.m. ET, Monday through Friday
+              Please fill out the form on this section to contact us. Or call us, 
+              you can also reach us via our e-mail.
             </p>
           </div>
           <div className="contact_inner">
@@ -54,7 +54,7 @@ function ContactPage() {
                       </h3>
 
                       <span>
-                        <a href="#!">
+                        <a href="www.gmail.com">
                           <span className="__cf_email__"
                             data-cfemail="bbd3ded7d7d4fbdfd2c1d6de95d8d4d6">
                             kenkszii@gmail.com

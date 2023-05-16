@@ -14,10 +14,10 @@ import service2 from "../static/assets/img/brushes/service/6.png"
 
 function ServicePage() {
   return (
-    <div class="dizme_tm_section" id="service">
-      <div class="dizme_tm_services">
-        <div class="container">
-          <div class="dizme_tm_main_title" data-align="center">
+    <div className="dizme_tm_section" id="service">
+      <div className="dizme_tm_services">
+        <div className="container">
+          <div className="dizme_tm_main_title" data-align="center">
             <span>Services</span>
             <h3>
               What We Do for Clients
@@ -29,7 +29,7 @@ function ServicePage() {
             </p>
           </div>
 
-          <div class="service_list">
+          <div className="service_list">
             <ul>
               <div className='tiltComponent'>
                 <div className="col">
@@ -37,20 +37,20 @@ function ServicePage() {
                     tiltMaxAngleY={10} perspective={2000}
                     glareColor={"rgb(255,0,0)"}>
 
-                    <li class="wow fadeInLeft" data-wow-duration="1s">
-                      <div class="list_inner tilt-effect">
-                        <span class="icon">
-                          <img class="svg" src={anchor1} alt="" />
-                          <img class="back" src={anchor2} alt="" />
+                    <li className="wow fadeInLeft" data-wow-duration="1s">
+                      <div className="list_inner tilt-effect">
+                        <span className="icon">
+                          <img className="svg" src={anchor1} alt="" />
+                          <img className="back" src={anchor2} alt="" />
                         </span>
-                        <div class="title">
+                        <div className="title">
                           <h3>
                             Creative Design
                           </h3>
 
                         </div>
 
-                        <div class="text">
+                        <div className="text">
                           <p>
                             Our team of experienced designers works closely with you to understand your business
                             needs and create visually stunning designs.
@@ -66,19 +66,19 @@ function ServicePage() {
                   <Tilt glareEnable={true} tiltMaxAngleX={10}
                     tiltMaxAngleY={10} perspective={2000}
                     glareColor={"rgb(255,0,0)"}>
-                    <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-                      <div class="list_inner tilt-effect">
-                        <span class="icon">
-                          <img class="svg" src={anchor3} alt="" />
-                          <img class="back" src={anchor8} alt="" />
+                    <li className="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+                      <div className="list_inner tilt-effect">
+                        <span className="icon">
+                          <img className="svg" src={anchor3} alt="" />
+                          <img className="back" src={anchor8} alt="" />
                         </span>
-                        <div class="title">
+                        <div className="title">
                           <h3>
                             Graphic Design
                           </h3>
 
                         </div>
-                        <div class="text">
+                        <div className="text">
                           <p>
                             We offer graphic design services,
                             including logo and branding design,
@@ -96,18 +96,18 @@ function ServicePage() {
                   <Tilt glareEnable={true} tiltMaxAngleX={10}
                     tiltMaxAngleY={10} perspective={2000}
                     glareColor={"rgb(255,0,0)"}>
-                    <li class="wow fadeInLeft" data-wow-duration="1s">
-                      <div class="list_inner tilt-effect">
-                        <span class="icon">
-                          <img class="svg" src={anchor5} alt="" />
-                          <img class="back" src={anchor6} alt="" />
+                    <li className="wow fadeInLeft" data-wow-duration="1s">
+                      <div className="list_inner tilt-effect">
+                        <span className="icon">
+                          <img className="svg" src={anchor5} alt="" />
+                          <img className="back" src={anchor6} alt="" />
                         </span>
-                        <div class="title">
+                        <div className="title">
                           <h3>
                             Digital Marketing
                           </h3>
                         </div>
-                        <div class="text">
+                        <div className="text">
                           <p>
                             Our digital marketing services help you reach your target audience by utilizing various
                             online marketing channels. We work with you to create
@@ -122,17 +122,17 @@ function ServicePage() {
                   <Tilt glareEnable={true} tiltMaxAngleX={10}
                     tiltMaxAngleY={10} perspective={2000}
                     glareColor={"rgb(255,0,0)"}>
-                    <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-                      <div class="list_inner tilt-effect">
-                        <span class="icon">
-                          <img class="svg" src={anchor7} alt="" />
-                          <img class="back" src={anchor4} alt="" />
+                    <li className="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+                      <div className="list_inner tilt-effect">
+                        <span className="icon">
+                          <img className="svg" src={anchor7} alt="" />
+                          <img className="back" src={anchor4} alt="" />
                         </span>
-                        <div class="title">
+                        <div className="title">
                           <h3>IT Consultation</h3>
 
                         </div>
-                        <div class="text">
+                        <div className="text">
                           <p>
                             Our IT consultation services provide expert advice and guidance
                             on all aspects of technology for your business. Whether you
@@ -141,10 +141,6 @@ function ServicePage() {
                             experts is here to help.
                           </p>
                         </div>
-
-
-
-
                       </div>
                     </li>
                   </Tilt>
@@ -153,9 +149,9 @@ function ServicePage() {
             </ul>
           </div>
         </div>
-        <div class="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src={service1}
+        <div className="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src={service1}
           alt="" /></div>
-        <div class="brush_2 wow zoomIn" data-wow-duration="1s"><img src={service2} alt="" />
+        <div className="brush_2 wow zoomIn" data-wow-duration="1s"><img src={service2} alt="" />
         </div>
       </div>
     </div>

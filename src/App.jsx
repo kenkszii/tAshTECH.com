@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Home from "./Pages/HomePage.jsx";
 import About from "./Pages/AboutPage.jsx";
 import Layout from "./Pages/Layout/Layout.jsx";
@@ -9,23 +9,34 @@ import Testimony from "./Pages/Testimony.jsx";
 import NewsLetter from "./Pages/NewsLetter.jsx";
 import Partners from "./Pages/Partners.jsx";
 import IframesLocation from "./Pages/IframesLocation.jsx";
-// import MobileView from "./Pages/MobileView.jsx";
+import Prelaoder from "./Pages/Layout/Prelaoder.jsx";
+
 function App() {
+  const [appIsReady, setAppIsReady] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setAppIsReady(true);
+    }, 2000);
+  }, []);
+
   return (
-    <Layout>
-      <Home />
-      <About/>
-      
-      <ServicePage />
-      <Testimony/>
-      <Partners/>
-      <BlogPage />
-      <NewsLetter/>
-      {/* <MobileView /> */}
-      <ContactPage/>
-      <IframesLocation/>
-    </Layout>
-    
+    <>
+      {!appIsReady && <Prelaoder />}
+      {appIsReady && (
+        <Layout>
+          <Home />
+          <About />
+          <ServicePage />
+          <Testimony />
+          <Partners />
+          <BlogPage />
+          <NewsLetter />
+          <ContactPage />
+          <IframesLocation />
+        </Layout>
+      )}
+    </>
   );
 }
 

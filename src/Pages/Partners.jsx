@@ -11,68 +11,68 @@ import zxt from "../static/assets/img/partners/light/8.png"
 
 function Partners() {
   return (
-    <div class="dizme_tm_section">
-      <div class="dizme_tm_partners">
+    <div className="dizme_tm_section">
+      <div className="dizme_tm_partners">
         <div className="dizme_tm_main_title" data-align="center">
           <span>Our Partners</span>
           <h3>We have the most amazing partners</h3>
           
         </div>
-        <div class="container">
-          <div class="partners_inner">
+        <div className="container">
+          <div className="partners_inner">
             <ul>
-              <li class="wow fadeIn" data-wow-duration="1s">
-                <div class="list_inner">
+              <li className="wow fadeIn" data-wow-duration="1s">
+                <div className="list_inner">
                   <img src={biteexpress} alt="" />
-                  <a class="dizme_tm_full_link" a href="#"></a>
+                  <a className="dizme_tm_full_link" a href="#"></a>
                 </div>
               </li>
-              <li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                <div class="list_inner">
+              <li className="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                <div className="list_inner">
                   <img src={phoenix} alt="" />
-                  <a class="dizme_tm_full_link" a href="#"></a>
+                  <a className="dizme_tm_full_link" a href="#"></a>
                 </div>
               </li>
-              <li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                <div class="list_inner">
+              <li className="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                <div className="list_inner">
                   <img src={exfac} alt="" />
-                  <a class="dizme_tm_full_link" a href="#"></a>
+                  <a className="dizme_tm_full_link" a href="#"></a>
                 </div>
               </li>
-              <li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
-                <div class="list_inner">
+              <li className="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                <div className="list_inner">
                   <img src={sheyita} alt="" />
-                  <a class="dizme_tm_full_link" a href="#"></a>
+                  <a className="dizme_tm_full_link" a href="#"></a>
                 </div>
               </li>
-              <li class="wow fadeIn" data-wow-duration="1s">
-                <div class="list_inner">
+              <li className="wow fadeIn" data-wow-duration="1s">
+                <div className="list_inner">
                   <img src={zarima} alt="" />
-                  <a class="dizme_tm_full_link" a href="#"></a>
+                  <a className="dizme_tm_full_link" a href="#"></a>
                 </div>
               </li>
-              <li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                <div class="list_inner">
+              <li className="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                <div className="list_inner">
                   <img src={emi} alt="" />
-                  <a class="dizme_tm_full_link" a href="#"></a>
+                  <a className="dizme_tm_full_link" a href="#"></a>
                 </div>
               </li>
-              <li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                <div class="list_inner">
+              <li className="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                <div className="list_inner">
                   <img src={Maliksclinic} alt="" />
-                  <a class="dizme_tm_full_link" a href="#"></a>
+                  <a className="dizme_tm_full_link" a href="#"></a>
                 </div>
               </li>
-              <li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
-                <div class="list_inner">
+              <li className="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                <div className="list_inner">
                   <img src={zxt} alt="" />
-                  <a class="dizme_tm_full_link" a href="#"></a>
+                  <a className="dizme_tm_full_link" a href="#"></a>
                 </div>
               </li>
             </ul>
           </div>
         </div>
-        <div class="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src="img/brushes/partners/1.png"
+        <div className="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src="img/brushes/partners/1.png"
           alt="" /></div>
       </div>
     </div>

@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { initializeDropdown } from "../../static/assets/js/menuhamburger.js";
 
-import "../../static/assets/js/menuhamburger.js";
-
+import mobilelogo from "../../static/assets/img/joined_copy.svg"
 function MobileView() {
+  useEffect(() => {
+    initializeDropdown();
+  }, []);
+
   return (
     <div className="dizme_tm_mobile_menu">
       <div className="mobile_menu_inner">
         <div className="mobile_in">
           <div className="logo">
-            <a href="#!"><img src="img/logo/dark.png" alt="" /></a>
+            <a href="#home"><img src={mobilelogo} alt="" /></a>
           </div>
           <div className="trigger">
             <div className="hamburger hamburger--slider">
@@ -25,11 +29,10 @@ function MobileView() {
           <ul className="anchor_nav">
             <li className="current"><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#service">Service</a></li>
             <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li className="download_cv"><a href="img/cv/1.jpg" download><span>Download CV</span></a></li>
+            <li className="download_cv"><a href="#contact" ><span>Hire Us</span></a></li>
           </ul>
         </div>
       </div>

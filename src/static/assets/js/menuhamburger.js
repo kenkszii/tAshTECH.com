@@ -1,34 +1,54 @@
 import jQuery from "jquery";
 
+export function initializeDropdown() {
+  jQuery(document).ready(function ($) {
+    var hamburger = $(".trigger .hamburger");
+    var mobileMenu = $(".dizme_tm_mobile_menu .dropdown");
+    var mobileMenuList = $(".dizme_tm_mobile_menu .dropdown .dropdown_inner ul li a");
+    var isOpen = false;
 
-jQuery(document).ready(function () {
-  dizme_tm_trigger_menu();
-  (".anchor_nav").onePageNav();
-});
-function dizme_tm_trigger_menu() {   
-    var hamburger = jQuery(".trigger .hamburger");
-    var mobileMenu = jQuery(".dizme_tm_mobile_menu .dropdown");
-    var mobileMenuList = jQuery(
-      ".dizme_tm_mobile_menu .dropdown .dropdown_inner ul li a"
-    );
-    hamburger.on("click", function () {
-      var element = jQuery(this);
-      if (element.hasClass("is-active")) {
-        element.removeClass("is-active");
-        mobileMenu.slideUp();
-      } else {
-        element.addClass("is-active");
-        mobileMenu.slideDown();
-      }
-      return false;
-    });
-    mobileMenuList.on("click", function () {
-      jQuery(".trigger .hamburger").removeClass("is-active");
+    function openMenu() {
+      hamburger.addClass("is-active");
+      mobileMenu.slideDown();
+      isOpen = true;
+    }
+
+    function closeMenu() {
+      hamburger.removeClass("is-active");
       mobileMenu.slideUp();
-      return false;
+      isOpen = false;
+    }
+
+    function toggleMenu() {
+      if (isOpen) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    }
+
+    hamburger.on("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      toggleMenu();
     });
-  }
 
-// jQuery(".anchor_nav").onePageNav();
+    mobileMenu.on("click", function (e) {
+      e.stopPropagation();
+    });
 
-  
+    $(document).on("click", function () {
+      if (isOpen) {
+        closeMenu();
+      }
+    });
+
+    mobileMenuList.on("click", function () {
+      if (isOpen) {
+        closeMenu();
+      }
+    });
+
+    $(".anchor_nav").onePageNav();
+  });
+}
